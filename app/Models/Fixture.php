@@ -42,12 +42,12 @@ class Fixture extends Model
 
     public function logo()
     {
-        return $this->hasOne('App\Models\club', 'id','club_id');
+        return $this->hasOne('App\Models\Club', 'id','club_id');
     }
 
     public function log()
     {
-        return $this->hasOne('App\Models\club', 'id','club_id_1');
+        return $this->hasOne('App\Models\Club', 'id','club_id_1');
     }
 
 
