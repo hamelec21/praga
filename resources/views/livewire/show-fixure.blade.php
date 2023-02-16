@@ -25,10 +25,10 @@
                             ?>
                     </div>
 
-                    <div class="flex flex-rows justify-center py-2 gap-x-12 ">
-                        <div class="py-1"><img src="{{ $fixture->logo->logo}}" class="h-10"></div>
+                    <div class="flex flex-rows justify-center py-2 gap-x-4">
+                        <div class="py-1"><img src="{{ Storage::url($fixture->logo->logo)}}" class="h-10"></div>
                         <div class="py-3 text-md text-gray-900 font-bold">V/S</div>
-                        <div class="py-1"><img src="{{ $fixture->log->logo}}" class="h-10"></div>
+                        <div class="py-1"><img src="{{ Storage::url($fixture->log->logo) }}" class="h-10"></div>
                     </div>
                     <div class="flex flex-row justify-around mb-5 px-2">
                         <div class="flex flex-col text-gray-800 text-xs font-bold">{{$fixture->club->nombre}}</div>

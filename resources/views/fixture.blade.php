@@ -13,7 +13,7 @@
 
     <!-- Styles -->
     @livewireStyles
-
+    @laravelPWA
 </head>
 <body class="fondo">
 <!--header-->

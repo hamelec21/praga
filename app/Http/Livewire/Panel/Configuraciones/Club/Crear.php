@@ -20,7 +20,7 @@ class Crear extends Component
     {
         $this-> validate();
        // $logo = $this->logo->store('public/logo_club');
-        $logo = $this->logo->store('storage/logo_club');
+        $logo = $this->logo->store('public/logo_club');
 
         Club::firstOrCreate([
             'nombre' => $this->nombre,

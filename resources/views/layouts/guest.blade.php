@@ -12,6 +12,7 @@
 
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
+        @laravelPWA
     </head>
     <body class="fondo">
         <div class="font-sans text-gray-100 antialiased">

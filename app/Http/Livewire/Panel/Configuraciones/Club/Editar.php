@@ -31,7 +31,7 @@ class Editar extends Component
         $this->validate();
         if ($this->logo) {
             Storage::delete([$this->club->logo]);
-            $this->club->logo = $this->logo->store('storage/logo_club');
+            $this->club->logo = $this->logo->store('public/logo_club');
 
         }
 
