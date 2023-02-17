@@ -11,10 +11,16 @@ class Show extends Component
     public function destroy($id)
     {
         Resultado::destroy($id);
+
         $this->emit('render');
     }
     public function render()
-    {   $resultados =Resultado::all();
+    {   $resultados =Resultado::orderBY('fechas_id','desc')->get();
+
+
+
+
+
         return view('livewire.panel.configuraciones.resultados.show',compact('resultados'));
     }
 }

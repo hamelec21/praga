@@ -16,7 +16,7 @@ class Show extends Component
 
     public function render()
     {
-        $fixtures = Fixture::all();
+       $fixtures = Fixture::orderBY('id','Desc')->get();
         return view('livewire.panel.configuraciones.fixture.show',compact('fixtures'));
     }
 }

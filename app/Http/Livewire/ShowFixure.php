@@ -11,7 +11,10 @@ class ShowFixure extends Component
     public function render()
     {
         $fixtures = Fixture::all();
+
         return view('livewire.show-fixure',compact('fixtures'));
+
+
     }
 
 
