@@ -1,11 +1,11 @@
 <x-app-layout>
-    <div class="bg-gray-900 h-screen ">
+    <div class="bg-gray-900 h-screen">
         <br><br>
             <div  class="container  mx-auto  text-white bg-gradient-to-r from-sky-600 to-cyan-400 py-4 rounded-lg mb-10">
                 <h3 class="text-center ">Panel de Control</h3>
             </div>
 
-            <div class="container mx-auto mt-5  px-2">
+            <div class="container mx-auto mt-5  px-2 flex justify-center">
 
                 <div class=" grid grid-cols-2 sm :grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-2 lg:gap-4 ">
                     <a href="{{ route('resultados.show')}}">
