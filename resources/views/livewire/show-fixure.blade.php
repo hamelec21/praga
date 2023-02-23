@@ -32,7 +32,7 @@
                             echo $date->translatedFormat( 'l j F' );
                             ?>
                     </div>
-                    <div class="flex flex-row justify-evenly py-2 gap-x-4">
+                    <div class="flex flex-row justify-center py-2 gap-x-4">
                         <div class="py-1 flex flex-row"><img src="{{ Storage::url($fixture->logo->logo)}}" class="h-10"></div>
 
                         <div class="py-3 text-md text-gray-900 font-bold">V/S</div>

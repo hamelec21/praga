@@ -4,13 +4,9 @@
 
         <!--fecha-->
         <div class="container mx-auto mt-5 mb-5">
-            <div class="text-center uppercase font-bold text-gray-600 px-4 py-2 bg-white w-4/5 mx-auto rounded-lg shadow-xl">Resultados
-                Fecha 18
+            <div class="text-center uppercase font-bold text-gray-600 px-4 py-2 bg-white w-4/5 mx-auto rounded-lg shadow-xl">Proximo en Partido
             </div>
         </div>
-
-        <!--resultados infantiles-->
-
         <div class="container mx-auto mt-5 mb-4">
             @foreach($resultados as $resultado)
             <div class="text-center text-gray-600 px-4 py-2  ml-2 mr-2 mx-auto  space-y-6">
