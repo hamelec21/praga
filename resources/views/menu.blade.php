@@ -8,14 +8,14 @@
         </div>
 
         <div class="text-white">
-            <a href="resultados">
+            <a href="/resultados">
                 <i class="fa-solid fa-trophy fa-2x"></i>
                 <div class=" text-xs">Resultados</div>
             </a>
         </div>
 
         <div class="text-white">
-            <a href="fixture">
+            <a href="/fixture">
                 <i class="fa-solid fa-calendar-days fa-2x"></i>
                 <div class=" text-xs">Fixture</div>
             </a>

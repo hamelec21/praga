@@ -16,7 +16,12 @@
             <div class="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-6 gap-4 ml-4 mr-4">
                 @foreach($fixtures as $fixture)
                 <div class="flex flex-col bg-white  rounded-lg text-white py-4 ">
-                    <div class=" text-sm text-center py-1 rounded-lg text-gray-700 font-bold">{{$fixture->temporada->nombre}} 2023</div>
+                    <div class="flex flex-row justify-around text-gray-800">
+                        <div class=" text-sm text-center py-1 rounded-lg text-gray-700 font-bold">{{$fixture->temporada->nombre}} 2023</div>
+                        <div class="bg-red-600 rounded-lg w-6 h-6 flex items-center">
+                                <a href="{{route('historial',$fixture->fechas_id)}}"><i class="far fa-futbol fa-1x ml-1 mt-1 text-white"></i></a>
+                        </div>
+                    </div>
                     <div class="text-sm text-center py-1 text-gray-700 font-bold">Fecha {{$fixture->fechas_id}}</div>
                     <div class=" text-sm text-center py-1 rounded-lg bg-gray-900 ml-4 mr-4">
                             <?php

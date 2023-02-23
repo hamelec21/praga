@@ -19,6 +19,7 @@ class User extends Authenticatable
     use HasProfilePhoto;
     use Notifiable;
     use TwoFactorAuthenticatable;
+
     use HasRoles; //Spatie
 
     /**
@@ -31,7 +32,9 @@ class User extends Authenticatable
         'email',
         'password',
         'fb_id',
-        'open_id'
+        'open_id',
+        'device_token',
+
     ];
 
     /**

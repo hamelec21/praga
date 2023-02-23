@@ -8,6 +8,20 @@
             <div class="container mx-auto mt-5  px-2 flex justify-center">
 
                 <div class=" grid grid-cols-2 sm :grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-2 lg:gap-4 ">
+
+                    <a href="{{ route('crear')}}">
+                        <div class="bg-gradient-to-r from-sky-600 to-cyan-400 rounded-lg  w-36 h-36 mb-5">
+                            <div class="text-center">
+
+                                <i class="fas fa-bell fa-2xl text-white group-hover:text-cyan-600 mt-10"></i>
+                            </div>
+                            <div class="px-2 text-md text-center text-white font-bold mt-10">
+                                Crear Notificaciónes
+                            </div>
+                        </div>
+                    </a>
+
+
                     <a href="{{ route('resultados.show')}}">
                         <div class="bg-gradient-to-r from-sky-600 to-cyan-400 rounded-lg  w-36 h-36">
                             <div class="text-center">

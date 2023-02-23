@@ -18,12 +18,27 @@ Route::get('/', function () {
 });
 
 
+
+
+
+
+/*
+|--------------------------------------------------------------------------
+|                      Grupos de Rutas  notificaciones
+|--------------------------------------------------------------------------
+*/
+Route::middleware(['auth:sanctum', 'verified'])->group(function () {
+    Route::get('/crear', [App\Http\Controllers\notiController::class, 'index'])->name('crear');
+    Route::post('/save-token', [App\Http\Controllers\notiController::class, 'saveToken'])->name('save-token');
+    Route::post('/send-notification', [App\Http\Controllers\notiController::class, 'sendNotification'])->name('send.notification');
+});
+
 /*
 |--------------------------------------------------------------------------
 |                    Grupos de Rutas  inicio de session Redes Sociales
 |--------------------------------------------------------------------------
 */
-//facebbok
+//facebook
 Route::get('auth/facebook',[\App\Http\Controllers\SocialController::class,'redirectFacebook']);
 Route::get('auth/facebook/callback',[\App\Http\Controllers\SocialController::class,'callbackFacebook']);
 //google
@@ -90,11 +105,13 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
 
 
     //resultados
-Route::get('show-resultados',\App\Http\Livewire\ShowResultados::class)->name('show-resultados');
+    Route::get('show-resultados',\App\Http\Livewire\ShowResultados::class)->name('show-resultados');
     //Fixure
     Route::get('show-fixure',\App\Http\Livewire\ShowFixure::class)->name('show-fixure');
 
-    //notificaciones
+    //Historial resultados
+     Route::get('historial/{fechas_id}',\App\Http\Livewire\Historial::class)->name('historial');
+
 
 });
 

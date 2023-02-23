@@ -9,6 +9,7 @@ class Resultado extends Model
 {
 
     protected $fillable = ['club_id_1','resultado_local','resultado_visita','club_id','fechas_id','temporadas_id','serie_id','status_id','tiposerie'];
+
     use HasFactory;
 
     //relaciones
