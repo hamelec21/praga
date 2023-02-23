@@ -18,9 +18,12 @@
                 <div class="flex flex-col bg-white  rounded-lg text-white py-4 ">
                     <div class="flex flex-row justify-around text-gray-800">
                         <div class=" text-sm text-center py-1 rounded-lg text-gray-700 font-bold">{{$fixture->temporada->nombre}} 2023</div>
-                        <div class="bg-red-600 rounded-lg w-6 h-6 flex items-center">
+
+                            @if ($fixture->status_id =='2')
+                            <div class="bg-red-600 rounded-lg w-6 h-6 flex items-center">
                                 <a href="{{route('historial',$fixture->fechas_id)}}"><i class="far fa-futbol fa-1x ml-1 mt-1 text-white"></i></a>
-                        </div>
+                            </div>
+                            @endif
                     </div>
                     <div class="text-sm text-center py-1 text-gray-700 font-bold">Fecha {{$fixture->fechas_id}}</div>
                     <div class=" text-sm text-center py-1 rounded-lg bg-gray-900 ml-4 mr-4">

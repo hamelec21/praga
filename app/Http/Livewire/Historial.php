@@ -9,9 +9,15 @@ class Historial extends Component
 {
 
     public function mount($fechas_id)
+
     {
+
             $this->historico = Resultado::where('fechas_id' ,$fechas_id)->orderby('id','Desc')->first();
-          //  dd($this->historico);
+            //  dd($this->historico);
+
+       
+
+
     }
 
     public function render()

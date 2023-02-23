@@ -3,11 +3,16 @@
 namespace App\Http\Livewire;
 
 use App\Models\Fixture;
+use App\Models\Resultado;
 use Livewire\Component;
 
 
 class ShowFixure extends Component
 {
+
+
+
+
     public function render()
     {
         $fixtures = Fixture::all();
@@ -16,11 +21,5 @@ class ShowFixure extends Component
 
 
     }
-
-
-
-
-
-
 
 }

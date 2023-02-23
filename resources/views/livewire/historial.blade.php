@@ -1,10 +1,9 @@
-
-
 <div class="h-screen py-20 fondo">
     @include('header')
     <!--fecha-->
+
     <div class="container mx-auto mt-5 mb-5">
-        <div class="text-center uppercase font-bold text-gray-600 px-4 py-2 bg-white w-4/5 mx-auto rounded-lg shadow-xl">Resultados Fecha n°
+        <div class="text-center uppercase font-bold text-gray-600 px-4 py-2 bg-white w-4/5 mx-auto rounded-lg shadow-xl">Resultados Fecha
             {{$this->historico->fechas_id}}
         </div>
     </div>
