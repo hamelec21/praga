@@ -4,7 +4,7 @@
 
         <!--fecha-->
         <div class="container mx-auto mt-5 mb-5">
-            <div class="text-center uppercase font-bold text-gray-600 px-4 py-2 bg-white w-4/5 mx-auto rounded-lg shadow-xl">Proximo en Partido
+            <div class="text-center uppercase font-bold text-gray-600 px-4 py-2 bg-white w-4/5 mx-auto rounded-lg shadow-xl">Proximo  Partido
             </div>
         </div>
         <div class="container mx-auto mt-5 mb-4">
