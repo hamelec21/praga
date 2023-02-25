@@ -15,11 +15,8 @@ class Show extends Component
         $this->emit('render');
     }
     public function render()
-    {   $resultados =Resultado::orderBY('fechas_id','desc')->get();
-
-
-
-
+    {
+         $resultados =Resultado::orderBY('fechas_id','desc')->get();
 
         return view('livewire.panel.configuraciones.resultados.show',compact('resultados'));
     }

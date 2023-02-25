@@ -32,19 +32,25 @@
                             echo $date->translatedFormat( 'l j F' );
                             ?>
                     </div>
-                    <div class="flex flex-row justify-center py-2 gap-x-4">
-                        <div class="py-1 flex flex-row"><img src="{{ Storage::url($fixture->logo->logo)}}" class="h-10"></div>
 
-                        <div class="py-3 text-md text-gray-900 font-bold">V/S</div>
-                        <div class="py-1"><img src="{{ Storage::url($fixture->log->logo) }}" class="h-10"></div>
+
+
+
+                    <div class="container mx-auto mb-2">
+                        <div class="flex justify-around mt-2">
+
+                            <div class="text-gray-900 justify-around"><img src="{{ Storage::url($fixture->logo->logo)}}" class="h-10"></div>
+                            <div class="text-gray-900 justify-around"><img src="{{ Storage::url($fixture->log->logo)}}" class="h-10"></div>
+
+                        </div>
+
+                        <div class="flex justify-around mt-2">
+
+                            <div class="text-gray-900 text-center text-xs">{{$fixture->club->nombre}}</div>
+                            <div class="text-gray-900 text-center text-xs">{{$fixture->eq->nombre}}</div>
+
+                        </div>
                     </div>
-
-                    <div class="grid grid-cols-2  gap-5 mb-5">
-                        <div class="text-gray-800 text-xs text-center justify-center">{{$fixture->club->nombre}}</div>
-                        <div class="text-gray-800 text-xs text-center justify-center ">{{$fixture->eq->nombre}}</div>
-                    </div>
-
-
 
                     <div class="text-sm text-center text-md rounded-lg bg-gray-900 ml-4 mr-4 ">{{$fixture->juega}}</div>
                     {{--poner un if segun el estado --}}
