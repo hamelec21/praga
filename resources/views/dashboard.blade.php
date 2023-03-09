@@ -1,4 +1,11 @@
 <x-app-layout>
+
+    {{-- @livewire('menu.sidebar')
+
+    <div class="ml-auto mb-6 lg:w-[75%] xl:w-[80] 2xl:w-[85%] ">
+
+    </div>
+--}}
     <div class="bg-gray-900 h-screen">
         <br><br>
             <div  class="container  mx-auto  text-white bg-gradient-to-r from-sky-600 to-cyan-400 py-4 rounded-lg mb-10">
@@ -117,6 +124,8 @@
             </div>
 
     </div>
+
+
 
 
 </x-app-layout>
