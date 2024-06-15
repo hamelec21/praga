@@ -16,14 +16,14 @@
                 <form>
                     <div class=" text-left text-gray-900 font-bold py-1 text-sm px-4 mb-4">
                         <label class="px-2">Nombre</label>
-                        <input wire:model="club.nombre" type="text" name="nombre" id="" placeholder="Ejemplo(Carta Poder)"
+                        <input wire:model="club.nombre" type="text" name="nombre" id="" placeholder=""
                                class=" rounded-lg border-transparent flex-1 appearance-none border border-gray-400 w-full py-1 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent">
                         @error('nombre') <span class="error text-red-600 text-xs">{{ $message }}</span> @enderror
                     </div>
 
                     <div class=" text-left text-gray-900 font-bold py-1 text-sm px-4 mb-4">
                         <label class="px-2">Logo</label>
-                        <input wire:model="logo" type="file" name="logo" id="" placeholder="Ejemplo(Carta Poder)"
+                        <input wire:model="logo" type="file" name="logo" id="" placeholder=""
                                class=" rounded-lg border-transparent flex-1 appearance-none border border-gray-400 w-full py-1 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent">
                         @error('logo') <span class="error text-red-600 text-xs">{{ $message }}</span> @enderror
                     </div>
